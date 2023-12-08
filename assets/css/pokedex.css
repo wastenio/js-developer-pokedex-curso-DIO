@@ -163,3 +163,70 @@
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 }
+
+.stat-label {
+    font-size: 200%;
+}
+
+.stat-value {
+    font-size: 100%;
+}
+
+.stats {
+    font-size: 80%;
+}
+
+.pokemon .detail .stats {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 0.5rem;
+}
+
+.pokemon .detail .stat {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.25rem;
+}
+
+.stat {
+    font-size: 52%;
+    display: flex;
+    padding: 2%;
+}
+
+.pokemon .detail .stat-label {
+    color: #fff;
+    margin-right: 0.5rem;
+}
+
+.pokemon .detail .stat-value {
+    color: #fff;
+    font-weight: bold;
+}
+
+.stat-value {
+    margin: 2%;
+}
+
+.progress-bar {
+    /* height: 30px;
+    padding: 5px; */
+    background-color: #ccc;
+    /* pseudo-elementos precisam de um
+      conteúdo para terem altura.
+      Como não teremos conteúdo no nosso
+      pseudo-elemento, utilizar
+      "display: flex" o força a
+      ter a altura do elemento pai.
+      */
+    display: flex;
+}
+
+.progress-bar::before {
+    content: "";
+    /* Por enquanto colocamos
+      uma largura e uma cor
+      com valores fixos
+      */
+}
